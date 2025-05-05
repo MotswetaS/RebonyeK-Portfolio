@@ -1,0 +1,146 @@
+:root {
+  --primary-clr: #1a1a1a;
+  --secondary-clr: #fafafa;
+}
+* {
+  color: var(--primary-clr);
+  font-family: "DM Sans", "Open Sans";
+}
+body {
+  margin: 0 80px;
+
+  background-image: url("../Background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+nav,
+footer,
+main,
+.intro,
+.contact-form {
+  margin-bottom: 80px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 16px;
+  width: fit-content;
+  margin-left: auto;
+  padding: 16px;
+}
+
+button {
+  font-size: 16px;
+  cursor: pointer;
+  background-color: var(--primary-clr);
+  padding: 10px 24px;
+  color: var(--secondary-clr);
+  border: none;
+  border-radius: 54px;
+}
+button:hover,
+#contact:hover {
+  background-color: #090909;
+}
+#contact {
+  color: var(--secondary-clr);
+  background-color: var(--primary-clr);
+}
+#resume,
+#send {
+  color: var(--primary-clr);
+  background-color: var(--secondary-clr);
+  border: 1px solid var(--primary-clr);
+  cursor: pointer;
+}
+#resume:hover,
+#send:hover {
+  background-color: #e8e8e8;
+}
+
+.intro {
+  max-width: 1134px;
+  text-wrap: wrap;
+}
+.intro > p {
+  max-width: 941px;
+}
+.intro > p,
+h1 {
+  padding: 0;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  color: var(--primary-clr);
+  max-width: 1280px;
+}
+.project-brief {
+  border: 1px solid #bcbcbc;
+  border-radius: 16px;
+  box-shadow: 0 1 4 0;
+  max-width: 308px;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+}
+.sub-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background-color: #e1e1e1;
+  border-radius: 0 0 16px 16px;
+}
+
+.sub-info > p {
+  margin: 0;
+  color: var(--primary-clr);
+}
+.sub-info button {
+  margin-top: 8px;
+}
+.project-img {
+  width: 308px;
+  height: 160px;
+}
+footer {
+  background-color: var(--primary-clr);
+  color: var(--secondary-clr);
+  padding: 16px;
+  border-radius: 8px;
+}
+.name {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+}
+#full-name,
+#email,
+#message {
+  border-radius: 8px;
+  border: 1px solid #bcbcbc;
+  padding: 16px 12px;
+}
+.contact-form input,
+textarea {
+  border: 1px solid #bcbcbc;
+}
+label {
+  font-weight: bold;
+}
+footer a,
+p,
+i {
+  color: var(--secondary-clr);
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
