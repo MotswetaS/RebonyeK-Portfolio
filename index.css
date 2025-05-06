@@ -67,6 +67,7 @@ button:hover,
 }
 .intro > p {
   max-width: 941px;
+  color: var(--primary-clr) !important;
 }
 .intro > p,
 h1 {
@@ -135,12 +136,51 @@ label {
   font-weight: bold;
 }
 footer a,
-p,
 i {
+  color: var(--secondary-clr);
+}
+footer p {
   color: var(--secondary-clr);
 }
 .socials {
   display: flex;
   flex-direction: row;
   gap: 40px;
+}
+
+/*Dasdhboard styling*/
+li {
+  list-style: none;
+  margin-bottom: 52px;
+}
+li a {
+  text-decoration: none;
+  padding: 16px 16px;
+  border: 1px solid #bcbcbc;
+  background-color: #bcbcbc;
+  border-radius: 16px;
+}
+#section-wrapper {
+  display: flex;
+  background-color: #fdfdfd;
+  box-shadow: rgba(184, 184, 184) 0px 1px 3px 0px,
+    rgba(184, 184, 184) 0px 1px 2px 0px;
+  margin-bottom: 40px;
+
+  border-radius: 16px;
+  width: 100%;
+}
+.side-nav {
+  width: 25%;
+  background-color: #f1f0f0;
+  padding: 16px 16px;
+  border-radius: 16px;
+}
+#dash-content {
+  width: 75%;
+  padding: 16px 16px;
+  border-radius: 16px;
+}
+#dash-content i {
+  color: #969696;
 }
